@@ -1,0 +1,139 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}ผู้จัดทำ{% endblock %}
+
+{% block content %}
+
+
+<body class="font-sans antialiased text-gray-900 leading-normal tracking-wider bg-cover"
+style="background-image: url('https://www.ubu.ac.th/web/files/00001ac2020042415552441.jpg'); background-size: cover;">
+
+<div class="max-w-4xl flex items-center h-auto flex-wrap mx-auto my-32 lg:my-20">
+
+    <!--Main Col-->
+    <div id="profile"
+        class="w-full lg:w-3/5 rounded-lg lg:rounded-l-lg lg:rounded-r-none shadow-2xl bg-white opacity-85 mx-6 lg:mx-0">
+
+
+        <div class="p-4 md:p-2 text-center lg:text-left">
+            <!-- Image for mobile view-->
+            <div class="block lg:hidden rounded-full shadow-xl mx-auto -mt-16 h-64 w-64">
+                <img src="{% static 'images/profile1.jpg' %}" alt="Profile Picture" class="rounded-full h-full w-full object-cover">
+            </div>
+
+            <h1 class="text-3xl font-bold pt-8 lg:pt-0">67114640245</h1>
+            <h1 class="text-3xl font-bold pt-8 lg:pt-0">นางสาวธนภรณ์ ศรีทอง</h1>
+            <div class="mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-green-500 opacity-25"></div>
+            <p class="pt-4 text-base font-bold flex items-center justify-center lg:justify-start">
+                <svg class="h-4 fill-current text-green-700 pr-4" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20">
+                    <path
+                        d="M9 12H1v6a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-6h-8v2H9v-2zm0-1H0V5c0-1.1.9-2 2-2h4V2a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1h4a2 2 0 0 1 2 2v6h-9V9H9v2zm3-8V2H8v1h4z" />
+                </svg>      กำลังศึกษา: สาขาเทคโนโลยีสารสนเทศและการสื่อสาร <br>คณะวิทยาศาสตร์ มหาวิทยาลัยอุบลราชธานี
+            </p>
+
+            <p class="pt-8 text-sm">Totally optional short description about yourself, what you do and so on.</p>
+
+            <div class="pt-12 pb-8">
+                <button class="bg-green-700 hover:bg-green-900 text-white font-bold py-2 px-4 rounded-full">
+                    Python 60%
+                </button>
+                <button class="bg-green-700 hover:bg-green-900 text-white font-bold py-2 px-4 rounded-full">
+                    Typing 50%
+               </button>
+               <button class="bg-green-700 hover:bg-green-900 text-white font-bold py-2 px-4 rounded-full">
+                    PHP 20%
+                </button>
+            </div>
+
+            <div class="mt-6 pb-16 lg:pb-0 w-4/5 lg:w-full mx-auto flex flex-wrap gap-7 items-center justify-center">
+                <a class="link" href="https://mail.google.com/mail" data-tippy-content="tanaporn.sr.67@ubu.ac.th">
+                    <svg class="h-6 fill-current text-gray-800 hover:text-blue-500" role="img" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <title>Email</title>
+                        <path d="M12 13.172l-9.09-6.364a1 1 0 011.18-1.636l8.451 5.907 8.452-5.907a1 1 0 111.18 1.636L12 13.172z" />
+                        <path d="M2 7.5v9.987c0 .274.224.497.5.497h19a.5.5 0 00.5-.497V7.5l-9.09 6.364a2 2 0 01-2.32 0L2 7.5z" />
+                    </svg>
+                </a>
+            
+                <a class="link" href="https://github.com/" data-tippy-content="@github_handle">
+                    <svg class="h-6 fill-current text-gray-800 hover:text-green-700" role="img" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <title>GitHub</title>
+                        <path
+                            d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                    </svg>
+                </a>
+
+                <a class="link" href="#" data-tippy-content="@unsplash_handle">
+                    <svg class="h-6 fill-current text-gray-800 hover:text-green-700" role="img" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <title>Unsplash</title>
+                        <path d="M7.5 6.75V0h9v6.75h-9zm9 3.75H24V24H0V10.5h7.5v6.75h9V10.5z" />
+                    </svg>
+                </a>
+                
+                
+                
+            </div>
+
+            <!-- Use https://simpleicons.org/ to find the svg for your preferred product -->
+
+        </div>
+
+    </div>
+
+    <!--Img Col-->
+    <div class="w-full lg:w-2/5">
+        <!-- Big profile image for side bar (desktop) -->
+        <img src="{% static 'images/profile.jpg' %}" alt="ธนภรณ์" class="rounded-none lg:rounded-lg shadow-2xl hidden lg:block">
+        <!-- Image from: http://unsplash.com/photos/MP0IUfwrn0A -->
+
+    </div>
+
+
+    <!-- Pin to top right corner -->
+    <div class="absolute top-0 right-0 h-12 w-18 p-4">
+        <button class="js-change-theme focus:outline-none">🌙</button>
+    </div>
+
+</div>
+
+<script src="https://unpkg.com/popper.js@1/dist/umd/popper.min.js"></script>
+<script src="https://unpkg.com/tippy.js@4"></script>
+<script>
+    //Init tooltips
+    tippy('.link',{
+      placement: 'bottom'
+    })
+
+    //Toggle mode
+    const toggle = document.querySelector('.js-change-theme');
+    const body = document.querySelector('body');
+    const profile = document.getElementById('profile');
+    
+    
+    toggle.addEventListener('click', () => {
+
+      if (body.classList.contains('text-gray-900')) {
+        toggle.innerHTML = "☀️";
+        body.classList.remove('text-gray-900');
+        body.classList.add('text-gray-100');
+        profile.classList.remove('bg-white');
+        profile.classList.add('bg-gray-900');
+      } else
+      {
+        toggle.innerHTML = "🌙";
+        body.classList.remove('text-gray-100');
+        body.classList.add('text-gray-900');
+        profile.classList.remove('bg-gray-900');			
+        profile.classList.add('bg-white');
+        
+      }
+    });
+    
+</script>
+
+</body>
+{% endblock content %}
